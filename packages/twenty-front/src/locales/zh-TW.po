@@ -3747,6 +3747,11 @@ msgstr "更改為年度？"
 msgid "Change visibility?"
 msgstr "更改可見性？"
 
+#. js-lingui-id: YX9+dy
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Changes to a {objectLabelSingular} logged on its own timeline. Consecutive updates by the same person are merged for a few minutes."
+msgstr ""
+
 #. js-lingui-id: rnTfap
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 msgid "Changing visibility requires reconnecting this OAuth connection. You will be redirected to authorize it again."
@@ -5317,6 +5322,11 @@ msgstr "正在建立您的<0>資料模型</0>..."
 #: src/modules/auth/sign-in-up/constants/WorkspaceActivationMessages.tsx
 msgid "Creating your <0>workspace</0>..."
 msgstr "正在建立您的<0>工作區</0>..."
+
+#. js-lingui-id: jLqlcX
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Creation, updates, deletion and restoration write timeline entries."
+msgstr ""
 
 #. js-lingui-id: HAzhV7
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
@@ -7958,6 +7968,16 @@ msgstr "事件類型"
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelDetails.tsx
 msgid "Event visibility"
 msgstr "事件可見性"
+
+#. js-lingui-id: tst44n
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
+msgid "Events"
+msgstr ""
+
+#. js-lingui-id: oBlmn/
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Events on related records that also appear on the {objectLabelSingular} timeline, derived from your data model."
+msgstr ""
 
 #. js-lingui-id: jvNRZW
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelsGeneral.tsx
@@ -11322,6 +11342,11 @@ msgstr "連結標籤"
 msgid "Link URL"
 msgstr ""
 
+#. js-lingui-id: jyIicI
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
+msgid "Linked"
+msgstr ""
+
 #. js-lingui-id: fKQhnY
 #: src/modules/activities/timeline-activities/rows/generic/components/EventRowGenericLinked.tsx
 msgid "linked a {objectLabel}"
@@ -11517,6 +11542,11 @@ msgstr "登出"
 #. js-lingui-id: 3guYwv
 #: src/modules/settings/profile/devices/components/SettingsProfileDevicesSection.tsx
 msgid "Log out all other devices"
+msgstr ""
+
+#. js-lingui-id: U7+UTt
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Log record changes"
 msgstr ""
 
 #. js-lingui-id: qakNlV
@@ -12329,6 +12359,7 @@ msgstr "N/A"
 #: src/modules/settings/config-variables/components/ConfigVariableTable.tsx
 #: src/modules/settings/data-model/new-object/components/SettingsAvailableStandardObjectsSection.tsx
 #: src/modules/settings/data-model/object-details/components/SettingsObjectRelationsTable.tsx
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
 #: src/modules/settings/data-model/object-details/components/tabs/SettingsObjectSearchSection.tsx
 #: src/modules/settings/developers/components/SettingsApiKeysTable.tsx
 #: src/modules/settings/logic-functions/components/SettingsLogicFunctionNewForm.tsx
@@ -14450,6 +14481,11 @@ msgstr "段落"
 msgid "Parameters"
 msgstr "參數"
 
+#. js-lingui-id: MZHPuB
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
+msgid "Participants"
+msgstr ""
+
 #. js-lingui-id: mPkInZ
 #: src/pages/settings/community/SettingsCommunity.tsx
 msgid "Partners"
@@ -15403,6 +15439,11 @@ msgstr "記錄（ID）"
 msgid "Record creation stopped. {formattedCreatedRecordsCount} records created."
 msgstr "紀錄創建中止，已創建 {formattedCreatedRecordsCount} 筆紀錄。"
 
+#. js-lingui-id: f3W0mK
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Record events"
+msgstr ""
+
 #. js-lingui-id: S2Kvcv
 #: src/modules/object-record/advanced-filter/components/AdvancedFilterRecordFilterOptionsDropdown.tsx
 msgid "Record filter rule options"
@@ -15548,6 +15589,7 @@ msgstr "已註冊為開發環境執行個體。此執行個體不會產生計費
 
 #. js-lingui-id: h9AYFD
 #: src/modules/settings/data-model/fields/forms/components/SettingsObjectNewFieldSelector.tsx
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
 msgid "Relation"
 msgstr "關聯"
 
@@ -16202,6 +16244,11 @@ msgstr "資料列層級安全性"
 #: src/modules/settings/data-model/fields/forms/select/components/SettingsDataModelFieldSelectFormOptionRow.tsx
 msgid "Ruby"
 msgstr "紅寶石色"
+
+#. js-lingui-id: 4EZrJN
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Rules"
+msgstr ""
 
 #. js-lingui-id: 3JjdaA
 #: src/pages/settings/ai/components/SettingsAgentEvalsTab.tsx
@@ -18272,6 +18319,7 @@ msgid "Synchronize Objects Labels and API Names"
 msgstr "同步對象標籤和 API 名稱"
 
 #. js-lingui-id: D+NlUC
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownThemesComponents.tsx
 #: src/pages/settings/ai/SettingsAgentTurnDetail.tsx
 msgid "System"
@@ -19132,6 +19180,7 @@ msgstr "時區"
 
 #. js-lingui-id: cklVjM
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCalendarViewContent.tsx
+#: src/pages/settings/data-model/SettingsObjectDetailPage.tsx
 msgid "Timeline"
 msgstr "時間軸"
 
@@ -19861,6 +19910,11 @@ msgstr "未知的工作區"
 msgid "Unlimited"
 msgstr "無限制"
 
+#. js-lingui-id: sEi4uU
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
+msgid "Unlinked"
+msgstr ""
+
 #. js-lingui-id: WDcQq9
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCustomView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownVisibilityContent.tsx
@@ -20099,6 +20153,7 @@ msgstr "已更新"
 
 #. js-lingui-id: +b7T3G
 #: src/modules/settings/components/SettingsDatabaseEventsForm.tsx
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
 #: src/pages/settings/admin-panel/SettingsAdminWorkspaceDetail.tsx
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationCommandMenuItemSettingsTab.tsx

@@ -3,10 +3,13 @@ import { useParams } from 'react-router-dom';
 
 import { ObjectMetadataIcon } from '@/object-metadata/components/ObjectMetadataIcon';
 import { useFilteredObjectMetadataItems } from '@/object-metadata/hooks/useFilteredObjectMetadataItems';
+import { useObjectMetadataItems } from '@/object-metadata/hooks/useObjectMetadataItems';
 import { SettingsPageContainer } from '@/settings/components/SettingsPageContainer';
 import { ObjectFields } from '@/settings/data-model/object-details/components/tabs/ObjectFields';
 import { ObjectLayout } from '@/settings/data-model/object-details/components/tabs/ObjectLayout';
 import { ObjectSettings } from '@/settings/data-model/object-details/components/tabs/ObjectSettings';
+import { ObjectTimeline } from '@/settings/data-model/object-details/components/tabs/ObjectTimeline';
+import { getObjectHasTimelineActivities } from '@/settings/data-model/object-details/utils/getObjectHasTimelineActivities';
 import { SettingsPageLayout } from '@/settings/components/layout/SettingsPageLayout';
 import { SettingsTabBar } from '@/settings/components/layout/SettingsTabBar';
 import { useAtomState } from '@/ui/utilities/state/jotai/hooks/useAtomState';
@@ -15,6 +18,7 @@ import { styled } from '@linaria/react';
 import {
   AppPath,
   CoreObjectNameSingular,
+  FeatureFlagKey,
   SettingsPath,
 } from 'twenty-shared/types';
 
@@ -24,12 +28,14 @@ import { activeTabIdComponentState } from '@/ui/layout/tab-list/states/activeTab
 import { useAtomComponentStateValue } from '@/ui/utilities/state/jotai/hooks/useAtomComponentStateValue';
 import { useLingui } from '@lingui/react/macro';
 import { getAppPath, getSettingsPath, isDefined } from 'twenty-shared/utils';
+import { useIsFeatureEnabled } from '@/workspace/hooks/useIsFeatureEnabled';
 import {
   IconArrowUpRight,
   IconLayout,
   IconListDetails,
   IconPlus,
   IconSettings,
+  IconTimelineEvent,
 } from 'twenty-ui/icon';
 import { Button } from 'twenty-ui/input';
 import { UndecoratedLink } from 'twenty-ui/navigation';
@@ -59,6 +65,11 @@ export const SettingsObjectDetailPage = () => {
     findObjectMetadataItemByNamePlural(updatedObjectNamePlural);
 
   const isDDLLocked = useAtomStateValue(isDDLLockedState);
+
+  const { objectMetadataItems } = useObjectMetadataItems();
+  const isTimelineRulesEnabled = useIsFeatureEnabled(
+    FeatureFlagKey.IS_TIMELINE_RULES_ENABLED,
+  );
 
   const readonly =
     isObjectMetadataReadOnly({
@@ -112,12 +123,26 @@ export const SettingsObjectDetailPage = () => {
         objectMetadataItem.isRemote ||
         objectMetadataItem.nameSingular === CoreObjectNameSingular.Dashboard,
     },
+    {
+      id: SETTINGS_OBJECT_DETAIL_TABS.TABS_IDS.TIMELINE,
+      title: t`Timeline`,
+      Icon: IconTimelineEvent,
+      hide:
+        !isTimelineRulesEnabled ||
+        objectMetadataItem.isRemote ||
+        !getObjectHasTimelineActivities({
+          objectMetadataItem,
+          objectMetadataItems,
+        }),
+    },
   ];
 
   const renderActiveTabContent = () => {
     switch (activeTabId) {
       case SETTINGS_OBJECT_DETAIL_TABS.TABS_IDS.FIELDS:
         return <ObjectFields objectMetadataItem={objectMetadataItem} />;
+      case SETTINGS_OBJECT_DETAIL_TABS.TABS_IDS.TIMELINE:
+        return <ObjectTimeline objectMetadataItem={objectMetadataItem} />;
       case SETTINGS_OBJECT_DETAIL_TABS.TABS_IDS.SETTINGS:
         return (
           <ObjectSettings

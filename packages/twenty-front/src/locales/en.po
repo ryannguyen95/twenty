@@ -3742,6 +3742,11 @@ msgstr "Change to Yearly?"
 msgid "Change visibility?"
 msgstr "Change visibility?"
 
+#. js-lingui-id: YX9+dy
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Changes to a {objectLabelSingular} logged on its own timeline. Consecutive updates by the same person are merged for a few minutes."
+msgstr "Changes to a {objectLabelSingular} logged on its own timeline. Consecutive updates by the same person are merged for a few minutes."
+
 #. js-lingui-id: rnTfap
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 msgid "Changing visibility requires reconnecting this OAuth connection. You will be redirected to authorize it again."
@@ -5312,6 +5317,11 @@ msgstr "Creating your <0>data model</0>..."
 #: src/modules/auth/sign-in-up/constants/WorkspaceActivationMessages.tsx
 msgid "Creating your <0>workspace</0>..."
 msgstr "Creating your <0>workspace</0>..."
+
+#. js-lingui-id: jLqlcX
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Creation, updates, deletion and restoration write timeline entries."
+msgstr "Creation, updates, deletion and restoration write timeline entries."
 
 #. js-lingui-id: HAzhV7
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
@@ -7953,6 +7963,16 @@ msgstr "Event type"
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelDetails.tsx
 msgid "Event visibility"
 msgstr "Event visibility"
+
+#. js-lingui-id: tst44n
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
+msgid "Events"
+msgstr "Events"
+
+#. js-lingui-id: oBlmn/
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Events on related records that also appear on the {objectLabelSingular} timeline, derived from your data model."
+msgstr "Events on related records that also appear on the {objectLabelSingular} timeline, derived from your data model."
 
 #. js-lingui-id: jvNRZW
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelsGeneral.tsx
@@ -11340,6 +11360,11 @@ msgstr "Link label"
 msgid "Link URL"
 msgstr "Link URL"
 
+#. js-lingui-id: jyIicI
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
+msgid "Linked"
+msgstr "Linked"
+
 #. js-lingui-id: fKQhnY
 #: src/modules/activities/timeline-activities/rows/generic/components/EventRowGenericLinked.tsx
 msgid "linked a {objectLabel}"
@@ -11536,6 +11561,11 @@ msgstr "Log out"
 #: src/modules/settings/profile/devices/components/SettingsProfileDevicesSection.tsx
 msgid "Log out all other devices"
 msgstr "Log out all other devices"
+
+#. js-lingui-id: U7+UTt
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Log record changes"
+msgstr "Log record changes"
 
 #. js-lingui-id: qakNlV
 #: src/modules/settings/security/components/SettingsSecuritySettings.tsx
@@ -12347,6 +12377,7 @@ msgstr "N/A"
 #: src/modules/settings/config-variables/components/ConfigVariableTable.tsx
 #: src/modules/settings/data-model/new-object/components/SettingsAvailableStandardObjectsSection.tsx
 #: src/modules/settings/data-model/object-details/components/SettingsObjectRelationsTable.tsx
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
 #: src/modules/settings/data-model/object-details/components/tabs/SettingsObjectSearchSection.tsx
 #: src/modules/settings/developers/components/SettingsApiKeysTable.tsx
 #: src/modules/settings/logic-functions/components/SettingsLogicFunctionNewForm.tsx
@@ -14468,6 +14499,11 @@ msgstr "Paragraph"
 msgid "Parameters"
 msgstr "Parameters"
 
+#. js-lingui-id: MZHPuB
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
+msgid "Participants"
+msgstr "Participants"
+
 #. js-lingui-id: mPkInZ
 #: src/pages/settings/community/SettingsCommunity.tsx
 msgid "Partners"
@@ -15421,6 +15457,11 @@ msgstr "Record (ID)"
 msgid "Record creation stopped. {formattedCreatedRecordsCount} records created."
 msgstr "Record creation stopped. {formattedCreatedRecordsCount} records created."
 
+#. js-lingui-id: f3W0mK
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Record events"
+msgstr "Record events"
+
 #. js-lingui-id: S2Kvcv
 #: src/modules/object-record/advanced-filter/components/AdvancedFilterRecordFilterOptionsDropdown.tsx
 msgid "Record filter rule options"
@@ -15566,6 +15607,7 @@ msgstr "Registered as a development instance. This instance will not be billed."
 
 #. js-lingui-id: h9AYFD
 #: src/modules/settings/data-model/fields/forms/components/SettingsObjectNewFieldSelector.tsx
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
 msgid "Relation"
 msgstr "Relation"
 
@@ -16220,6 +16262,11 @@ msgstr "Row-level security"
 #: src/modules/settings/data-model/fields/forms/select/components/SettingsDataModelFieldSelectFormOptionRow.tsx
 msgid "Ruby"
 msgstr "Ruby"
+
+#. js-lingui-id: 4EZrJN
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Rules"
+msgstr "Rules"
 
 #. js-lingui-id: 3JjdaA
 #: src/pages/settings/ai/components/SettingsAgentEvalsTab.tsx
@@ -18290,6 +18337,7 @@ msgid "Synchronize Objects Labels and API Names"
 msgstr "Synchronize Objects Labels and API Names"
 
 #. js-lingui-id: D+NlUC
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownThemesComponents.tsx
 #: src/pages/settings/ai/SettingsAgentTurnDetail.tsx
 msgid "System"
@@ -19182,6 +19230,7 @@ msgstr "Time zone"
 
 #. js-lingui-id: cklVjM
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCalendarViewContent.tsx
+#: src/pages/settings/data-model/SettingsObjectDetailPage.tsx
 msgid "Timeline"
 msgstr "Timeline"
 
@@ -19911,6 +19960,11 @@ msgstr "Unknown workspace"
 msgid "Unlimited"
 msgstr "Unlimited"
 
+#. js-lingui-id: sEi4uU
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
+msgid "Unlinked"
+msgstr "Unlinked"
+
 #. js-lingui-id: WDcQq9
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCustomView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownVisibilityContent.tsx
@@ -20149,6 +20203,7 @@ msgstr "updated"
 
 #. js-lingui-id: +b7T3G
 #: src/modules/settings/components/SettingsDatabaseEventsForm.tsx
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
 #: src/pages/settings/admin-panel/SettingsAdminWorkspaceDetail.tsx
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationCommandMenuItemSettingsTab.tsx

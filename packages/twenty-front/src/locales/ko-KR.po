@@ -3747,6 +3747,11 @@ msgstr "연간 요금제로 변경?"
 msgid "Change visibility?"
 msgstr "가시성을 변경하시겠습니까?"
 
+#. js-lingui-id: YX9+dy
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Changes to a {objectLabelSingular} logged on its own timeline. Consecutive updates by the same person are merged for a few minutes."
+msgstr ""
+
 #. js-lingui-id: rnTfap
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 msgid "Changing visibility requires reconnecting this OAuth connection. You will be redirected to authorize it again."
@@ -5317,6 +5322,11 @@ msgstr "<0>데이터 모델</0>을 생성하는 중..."
 #: src/modules/auth/sign-in-up/constants/WorkspaceActivationMessages.tsx
 msgid "Creating your <0>workspace</0>..."
 msgstr "<0>워크스페이스</0>를 생성하는 중..."
+
+#. js-lingui-id: jLqlcX
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Creation, updates, deletion and restoration write timeline entries."
+msgstr ""
 
 #. js-lingui-id: HAzhV7
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
@@ -7958,6 +7968,16 @@ msgstr "이벤트 유형"
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelDetails.tsx
 msgid "Event visibility"
 msgstr "이벤트 가시성"
+
+#. js-lingui-id: tst44n
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
+msgid "Events"
+msgstr ""
+
+#. js-lingui-id: oBlmn/
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Events on related records that also appear on the {objectLabelSingular} timeline, derived from your data model."
+msgstr ""
 
 #. js-lingui-id: jvNRZW
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelsGeneral.tsx
@@ -11345,6 +11365,11 @@ msgstr "링크 라벨"
 msgid "Link URL"
 msgstr ""
 
+#. js-lingui-id: jyIicI
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
+msgid "Linked"
+msgstr ""
+
 #. js-lingui-id: fKQhnY
 #: src/modules/activities/timeline-activities/rows/generic/components/EventRowGenericLinked.tsx
 msgid "linked a {objectLabel}"
@@ -11540,6 +11565,11 @@ msgstr "로그아웃"
 #. js-lingui-id: 3guYwv
 #: src/modules/settings/profile/devices/components/SettingsProfileDevicesSection.tsx
 msgid "Log out all other devices"
+msgstr ""
+
+#. js-lingui-id: U7+UTt
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Log record changes"
 msgstr ""
 
 #. js-lingui-id: qakNlV
@@ -12352,6 +12382,7 @@ msgstr "해당 없음"
 #: src/modules/settings/config-variables/components/ConfigVariableTable.tsx
 #: src/modules/settings/data-model/new-object/components/SettingsAvailableStandardObjectsSection.tsx
 #: src/modules/settings/data-model/object-details/components/SettingsObjectRelationsTable.tsx
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
 #: src/modules/settings/data-model/object-details/components/tabs/SettingsObjectSearchSection.tsx
 #: src/modules/settings/developers/components/SettingsApiKeysTable.tsx
 #: src/modules/settings/logic-functions/components/SettingsLogicFunctionNewForm.tsx
@@ -14473,6 +14504,11 @@ msgstr "문단"
 msgid "Parameters"
 msgstr "매개변수"
 
+#. js-lingui-id: MZHPuB
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
+msgid "Participants"
+msgstr ""
+
 #. js-lingui-id: mPkInZ
 #: src/pages/settings/community/SettingsCommunity.tsx
 msgid "Partners"
@@ -15426,6 +15462,11 @@ msgstr "레코드(ID)"
 msgid "Record creation stopped. {formattedCreatedRecordsCount} records created."
 msgstr "기록 생성이 중단되었습니다. {formattedCreatedRecordsCount}개 기록이 생성되었습니다."
 
+#. js-lingui-id: f3W0mK
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Record events"
+msgstr ""
+
 #. js-lingui-id: S2Kvcv
 #: src/modules/object-record/advanced-filter/components/AdvancedFilterRecordFilterOptionsDropdown.tsx
 msgid "Record filter rule options"
@@ -15571,6 +15612,7 @@ msgstr "개발 인스턴스로 등록되었습니다. 이 인스턴스에는 청
 
 #. js-lingui-id: h9AYFD
 #: src/modules/settings/data-model/fields/forms/components/SettingsObjectNewFieldSelector.tsx
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
 msgid "Relation"
 msgstr "관계"
 
@@ -16225,6 +16267,11 @@ msgstr "행 수준 보안"
 #: src/modules/settings/data-model/fields/forms/select/components/SettingsDataModelFieldSelectFormOptionRow.tsx
 msgid "Ruby"
 msgstr "루비"
+
+#. js-lingui-id: 4EZrJN
+#: src/modules/settings/data-model/object-details/components/tabs/ObjectTimeline.tsx
+msgid "Rules"
+msgstr ""
 
 #. js-lingui-id: 3JjdaA
 #: src/pages/settings/ai/components/SettingsAgentEvalsTab.tsx
@@ -18295,6 +18342,7 @@ msgid "Synchronize Objects Labels and API Names"
 msgstr "객체 레이블과 API 이름 동기화"
 
 #. js-lingui-id: D+NlUC
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownThemesComponents.tsx
 #: src/pages/settings/ai/SettingsAgentTurnDetail.tsx
 msgid "System"
@@ -19185,6 +19233,7 @@ msgstr "시간대"
 
 #. js-lingui-id: cklVjM
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCalendarViewContent.tsx
+#: src/pages/settings/data-model/SettingsObjectDetailPage.tsx
 msgid "Timeline"
 msgstr "타임라인"
 
@@ -19914,6 +19963,11 @@ msgstr "알 수 없는 워크스페이스"
 msgid "Unlimited"
 msgstr "무제한"
 
+#. js-lingui-id: sEi4uU
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
+msgid "Unlinked"
+msgstr ""
+
 #. js-lingui-id: WDcQq9
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCustomView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownVisibilityContent.tsx
@@ -20152,6 +20206,7 @@ msgstr "업데이트됨"
 
 #. js-lingui-id: +b7T3G
 #: src/modules/settings/components/SettingsDatabaseEventsForm.tsx
+#: src/modules/settings/data-model/object-details/components/SettingsObjectTimelineRulesTable.tsx
 #: src/pages/settings/admin-panel/SettingsAdminWorkspaceDetail.tsx
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationCommandMenuItemSettingsTab.tsx
